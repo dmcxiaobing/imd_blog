@@ -6,4 +6,4 @@ server:
   port: 8762
 spring:
   application:
-    name: service-eureka_client
+    name: service-eureka-client  #服务名不要用_，好用-

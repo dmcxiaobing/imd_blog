@@ -12,8 +12,12 @@ public class HiController {
     @Autowired
     SchedualServiceHi schedualServiceHi;
 
+    /**
+     * http://localhost:8765/hi?name=david
+     */
     @RequestMapping(value = "/hi", method = RequestMethod.GET)
     public String sayHi(@RequestParam String name) {
+        System.out.println("hicontroller");
         return schedualServiceHi.sayHiFromClientOne(name);
     }
 }
