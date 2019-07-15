@@ -5,13 +5,14 @@
     <modelVersion>4.0.0</modelVersion>
     <packaging>pom</packaging>
     <modules>
-    <module>imd_blog_service</module>
-    <module>imd_blog_dao</module>
-    <module>imd_blog_interface</module>
-    <module>imd_blog_web</module>
-    <module>imd_blog_common</module>
-    <module>imd_blog_eureka</module>
-    <module>eureka_client</module>
+        <module>imd_blog_service</module>
+        <module>imd_blog_dao</module>
+        <module>imd_blog_interface</module>
+        <module>imd_blog_web</module>
+        <module>imd_blog_gateway</module>
+        <module>imd_blog_common</module>
+        <module>imd_blog_eureka</module>
+        <module>eureka_client</module>
         <module>eureka_feign</module>
     </modules>
     <groupId>com.david</groupId>
@@ -35,10 +36,7 @@
     </properties>
 
     <dependencies>
-        <dependency>
-            <groupId>org.springframework.cloud</groupId>
-            <artifactId>spring-cloud-starter-netflix-eureka-server</artifactId>
-        </dependency>
+
         <dependency>
             <groupId>org.springframework.cloud</groupId>
             <artifactId>spring-cloud-starter</artifactId>
@@ -91,7 +89,6 @@
             </snapshots>
         </repository>
     </repositories>
-
 
 
 </project>
